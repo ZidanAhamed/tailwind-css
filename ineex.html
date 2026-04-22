@@ -6,16 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>tailwind</title>
+    <style>
+        td,th {
+            border: 2px solid brown;
+            padding: 10px 20px;
+        }
+
+    </style>
 </head>
 
-<body class="bg-slate-700">
+<body class="bg-slate-400">
     <header class="flex justify-between bg-slate-400 items-center px-5">
         <div class="size-30">
             <img src="images/7.jpg" alt="">
         </div>
-        <div class="group relative">
+        <div class="group relative mr-10">
             <button
-                class="text-[16px] bg-purple-600 font-bold p-2 cursor-pointer my-2 hover:bg-white group-hover:bg-blue-500">Menu</button>
+                class="text-[16px] bg-purple-600 font-bold p-2 cursor-pointer right-0.5 my-2 hover:bg-white group-hover:bg-blue-500">Menu</button>
 
             <ul
                 class="w-20 bg-slate-900 text-white space-y-2 font-semibold  px-1.5 absolute opacity-0 group-hover:opacity-100 transition duration-300 scale-50 group-hover:scale-100 ">
@@ -28,6 +35,43 @@
         </div>
 
     </header>
+
+    <main class="flex flex-col items-center">
+        <h2 class="font-extrabold text-[3rem]">Friends</h2>
+        <table class="border-collapse text-center">
+            <thead>
+                <tr>
+                    <th>School</th>
+                    <th>College</th>
+                    <th>University</th>
+                    <th>Others</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>taosif</td>
+                    <td>Chayan</td>
+                    <td>Nafis</td>
+                    <td>Rudro</td>
+                </tr>
+                <tr>
+                    <td>Abir</td>
+                    <td>Alvee</td>
+                    <td>Nabil</td>
+                    <td>Siyam</td>
+                </tr>
+                <tr>
+                    <td>Hasan Joy</td>
+                    <td>Refat</td>
+                    <td>Miraj</td>
+                    <td>Mahadi</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <td colspan="4">Total Friends = </td>
+            </tfoot>
+        </table>
+    </main>
 
 </body>
 
