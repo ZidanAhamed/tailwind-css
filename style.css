@@ -1,4 +1,4 @@
-/* @import "tailwindcss";  */
+/* @import "tailwindcss"; 
 .header, .nav, .main, .sidebar, .advertising, .footer{
     background-color: bisque;
     border: 2px solid black;
@@ -32,4 +32,41 @@
     "nav main main advertising"
     "footer footer footer footer";
     gap: 10px;
+    max-width: 1000px;
+   margin: 20px auto;
+   text-align: center;
+} */
+
+.field{
+    border: 2px solid aqua;
+    height: 400px;
+}
+
+.bat{
+    transition: transform 0.1s;
+}
+
+.field:hover .bat{
+    transform: rotate(-60deg);
+    transform-origin: top right ;
+
+}
+
+.field:hover .ball {
+    transform: translate(300px, -500px)
+}
+
+.ball{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: relative;
+    left: 480px;
+    bottom: 40px;
+    transition: transform 0.5s ease-out 0.1s;
+}
+
+.ball{
+
 }
